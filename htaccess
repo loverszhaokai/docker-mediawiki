@@ -1,0 +1,8 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Short url for wiki pages
+RewriteRule ^/?wiki(/.*)?$ /w/index.php [L]
+
+# Redirect / to Main Page
+RewriteRule ^/*$ /w/index.php [L]
